@@ -1,0 +1,501 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*------Navigation Bar------*/
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-color: #000000;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	position:relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	position: sticky;
+	top: 0;
+	flex-basis: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 17px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+}
+.nav-links ul li a:hover{
+	color: yellow;
+}
+.text-box {
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font: italic;
+	font-size: 55px;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #ffff;
+	border: 1px solid #ffff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	margin-top: 2%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border:  1px solid #f44336;
+	background: #f44336;
+	transition: 0.5s;
+}
+nav .fa{
+	display: none;
+}
+@media(max-width : 700px){
+	.text-box{
+		margin-left: 5%;
+	}
+	.text-box h1{
+		font-size: 20px;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: rosybrown;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fa{
+		display: block;
+		color: yellow;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+}
+
+
+
+
+/*-----COURSE------*/
+
+.we{
+	width: 80%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	text-align: center;
+	padding-top: 10px;
+	background-attachment: fixed;
+	border-radius: 10px;
+}
+.we h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+.row{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	margin-left: 0%;
+	margin-right: 0%;
+	flex-basis: 31%;
+	background: #fff3f3;
+	box-sizing: border-box;
+
+}
+.we-col{
+	flex-basis: 50%;
+	width: 0%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	padding:10px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border-collapse: collapse;
+}
+.we-col a{
+	text-decoration: none;
+	border-style: hidden;
+	border-color: lightgreen;
+	color: #000000;
+	padding:70px;
+	
+}
+.we-col a:hover{
+	background-color: yellow;
+	margin: 0%;
+	border-radius: 10px;
+	flex-basis: 31%;
+	cursor: pointer;
+}
+
+
+@media(max-width: 1380px){
+	.row{
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+	.we-col a{
+		padding:0px;
+	}
+}
+
+/*-------Aashray NGO-------*/
+
+.image{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://www.dosp.org/wp-content/uploads/2020/04/Hillsborough-Hope-6-1024x575.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.new{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 23%;
+}
+.new h1{
+	font: italic;
+	font-size: 45px;
+}
+.new p{
+	left: 5%
+	font: italic;
+	font-size: x-large;
+}
+.Case-Study{
+	display: inline-block;
+	text-decoration: none;
+	color: #ffff;
+	border: 1px solid #ffff;
+	padding: 12px 34px;
+	font-size: 13px;
+	margin-top: 1%;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.Case-Study:hover{
+	border:  1px solid #f44336;
+	background: blueviolet;
+	transition: 1s;
+}
+
+
+@media (max-width: 480px){
+	.image{
+		width: 100%;
+		height: auto;
+	}
+	.new{
+		margin-left: 5%;
+	}
+	.new h1{
+	     margin-left: 0;
+		font-size: 25px;
+	}
+	.new p{
+		font-size: small;
+		margin-left: 9%;
+	}
+}
+
+
+/*----------Vrikshit Foundation--------*/
+
+.vrikshit{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://cafedissensuseveryday.files.wordpress.com/2020/06/image_750x_5cf7443406da2.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.vri{
+	font: italic;
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 23%;
+	
+}
+.vri h1{
+	font: italic;
+	font-size: 45px;
+}
+.vri p{
+	left: 5%;
+	font: italic;
+	font-size: x-large;
+}
+.Case-Vrikshit{
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 1%;
+	color: #ffff;
+	border: 1px solid #ffff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.Case-Vrikshit:hover{
+	border:  1px solid #f44336;
+	background: sandybrown;
+	transition: 1s;
+}
+
+@media (max-width: 480px)
+{
+	.vrikshit{
+		height: auto;
+	}
+	.vri{
+		margin-left: 5%;
+	}
+	.vri h1{
+		font-size: 25px;
+		margin-left: 0;
+	}
+	.vri p{
+		font-size: small;
+		margin-left: 9%;
+	}
+}
+
+
+
+/*-----littlehand foundation-----*/
+
+.littlehand{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://image.freepik.com/free-photo/business-teamwork-join-hands-together-business-teamwork-concept_1150-1804.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.little{
+	font: italic;
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 23%;
+}
+.little h1{
+	font: italic;
+	font-size: 45px;
+}
+.little p{
+	left: 5%;
+	font: italic;
+	font-size: x-large;
+}
+.hand{
+	border-radius: 5px;
+	margin-top: 1%;
+	display: inline-block;
+	text-decoration: none;
+	color: #ffff;
+	border: 1px solid #ffff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hand:hover{
+	border:  1px solid #f44336;
+	background: mediumpurple;
+	transition: 1s;
+}
+
+@media(max-width: 480px){
+	.littlehand{
+		height: auto;
+	}
+	.little{
+		margin-left: 5% ;
+	}
+	.little h1{
+		font-size: 25px;
+		margin-left: 0;
+	}
+	.little p{
+		font-size: small;
+		margin-left:9%;
+	}
+}
+
+
+
+/*-------SUCCESS STORY------*/
+
+
+.success{
+	width:auto;
+	margin: 0;
+	text-align: center;
+	background-attachment: fixed;
+	font: italic;
+ 	background: cover;
+}
+.succ{
+	background: black;
+	background-attachment: fixed;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-radius: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.success h1{
+	color: white;
+	padding-top: 4%;
+	font-size: 40px;
+}
+.suc{
+	display: inline-block;
+	color: white;
+	border: solid 1px white;
+	padding: 10px 50px;
+	font-size: 25px;
+	border-radius: 10px;
+	text-decoration: none;
+	background: transparent;
+	cursor: pointer;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	position: relative;
+}
+.suc:hover{
+	border: 1px solid #f44336;
+	background: lightgreen;
+	color: black;
+	transition: 0.5s;
+}
+
+@media (max-width: 700px){
+	.succ{
+		font-size: 20px;
+	}
+}
+
+
+/*----------Footer Page--------*/
+
+
+.footer{
+	margin: 0;
+	width: auto;
+	height: auto;
+	text-align: center;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: #ADADAD;
+}
+ 
+.footer p{
+	margin-top: 18px;
+	margin-left: 21px;
+	text-align: center;
+}
+.footer h3{
+	font-size: 30px;
+	color: #AC3B61;
+}
+.logos a{
+height: auto;
+width: auto;
+margin: 26px;
+cursor: pointer;
+text-align: center;
+}
+img{
+	width: 150px;
+    display: flex;
+	padding: 2%;
+	justify-content: space-between;
+	text-align: center;
+}
+
+a i{
+	transition: all 0.3s linear;
+}
+a:hover i{
+	transform: scale(1.6);
+}
+
+.fa-instagram{
+	color: #e84393;
+}
+.fa-twitter{
+	color: #0097e6;
+}
+.fa-linkedin{
+	color: #0072b1;
+}
+.fa-facebook{
+	color: darkblue;
+}
+
+.fa-heart-o{
+	color: darkred;
+}
+
